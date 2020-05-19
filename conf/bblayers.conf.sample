@@ -14,5 +14,4 @@ BBLAYERS ?= " \
   ../poky/meta-openembedded/meta-python \
   ../poky/meta-openembedded/meta-networking \
   ../poky/meta-soco \
-  
   "
