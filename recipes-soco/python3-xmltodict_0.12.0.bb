@@ -1,0 +1,16 @@
+
+SUMMARY = "Makes working with XML feel like you are working with JSON"
+HOMEPAGE = "https://github.com/martinblech/xmltodict"
+AUTHOR = "Martin Blech <martinblech@gmail.com>"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=01441d50dc74476db58a41ac10cb9fa2"
+
+SRC_URI = "https://files.pythonhosted.org/packages/58/40/0d783e14112e064127063fbf5d1fe1351723e5dfe9d6daad346a305f6c49/xmltodict-0.12.0.tar.gz"
+SRC_URI[md5sum] = "ddb2bd078cef4f7e3021a578034ad941"
+SRC_URI[sha256sum] = "50d8c638ed7ecb88d90561beedbf720c9b4e851a9fa6c47ebd64e99d166d8a21"
+
+S = "${WORKDIR}/xmltodict-0.12.0"
+
+RDEPENDS_${PN} = ""
+
+inherit setuptools3
