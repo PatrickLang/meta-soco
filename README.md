@@ -27,9 +27,17 @@ git clone -b dunfell git://git.openembedded.org/meta-openembedded
 git clone git@github.com:PatrickLang/meta-soco.git
 ```
 
+Start a container with the needed Yocto tools:
+
+```
+cd ..
+docker run --rm -it -v $PWD:$PWD --network=host --workdir=$PWD crops/poky
+```
+
 Now, create a build configuration folder using the template included here
 
 ```
+cd poky
 TEMPLATECONF=meta-soco/conf . oe-init-build-env ../build
 ```
 
